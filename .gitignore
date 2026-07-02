@@ -1,0 +1,36 @@
+# Python caches and local environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Model caches, weights, checkpoints, and training outputs
+huggingface/*
+!huggingface/.gitkeep
+**/TRAIN_RESULTS/*
+!**/TRAIN_RESULTS/.gitkeep
+**/save_model/*
+!**/save_model/.gitkeep
+**/base_model/*
+!**/base_model/.gitkeep
+**/checkpoint-*/
+*.safetensors
+*.pt
+*.pth
+*.bin
+
+# Experiment tracking and runtime artifacts
+**/wandb/*
+!**/wandb/.gitkeep
+*.log
+*.lock
+
+# Generated test visualizations
+**/test_pic/*
+!**/test_pic/.gitkeep
+
+# Local secrets
+.env
+.env.*
+*.pem
+*.key
