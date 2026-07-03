@@ -47,7 +47,7 @@ def main():
     model_version = 0
 
     parser = argparse.ArgumentParser() #在调用过程读取超参数，指定模型和rank
-    parser.add_argument('--algo', type=str, default='GRPO_api_trunc', help="choose algorithms") #选择模型
+    parser.add_argument('--algo', type=str, default='GRPO_api_trunc_use_latest_model', help="choose algorithms") #选择模型
     parser.add_argument('--local_rank', type=int, default=-1)
 
     args, _ = parser.parse_known_args()
